@@ -1,6 +1,6 @@
 # gunicorn-flask
 
-FROM ubi
+FROM docker-registry.default.svc:5000/base-images/ubi
 
 RUN yum install -y python3 python3-pip
 RUN pip3 install gunicorn
